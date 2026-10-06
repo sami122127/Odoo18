@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.log
+*.pyc
+.vscode/
+.idea/
+sessions/
+*.db
+*.sqlite3
+.env
+
+.venv/
+.odoo.conf
+odoo.conf
