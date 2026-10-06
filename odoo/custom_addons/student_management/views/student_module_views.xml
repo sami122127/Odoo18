@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_student_management_form" model="ir.ui.view">
+            <field name="name">student.management.form</field>
+            <field name="model">student.management</field>
+            <field name="arch" type="xml">
+                <form string="Student Management">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="age"/>
+                            <field name="email"/>
+                            <field name="phone"/>
+                            <field name="address"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_student_management_tree" model="ir.ui.view">
+            <field name="name">student.management.tree</field>
+            <field name="model">student.management</field>
+            <field name="arch" type="xml">
+                <tree string="Student Management">
+                    <field name="name"/>
+                    <field name="age"/>
+                    <field name="email"/>
+                </tree>
+            </field>
+        </record>
+
+        <menuitem id="menu_student_management" name="Student Management" sequence="10"/>
+
+        <record id="action_student_management" model="ir.actions.act_window">
+            <field name="name">Student Management</field>
+            <field name="res_model">student.management</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id("menu_student_management_sub") parent("menu_student_management") action("action_student_management") sequence("10")/>
+    </data>
+</odoo>

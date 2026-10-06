@@ -8,8 +8,9 @@
     "website": "https://www.odoo.com",
     "depends": ["base"],
     "data": [
-        
+        "views/student_module_views.xml"
     ],
     "installable": True,
     "application": True,
+    "auto_install": False,
 }
