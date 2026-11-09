@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Main School Management Menu -->
+    <menuitem
+        id="menu_root_school_management"
+        name="School Management"
+        web_icon="School_Management_System,static/description/icon.png"
+        sequence="10"
+    />
+
+    <!-- Student Management Submenu -->
+    <menuitem
+        id="menu_student_management"
+        name="Students"
+        parent="menu_root_school_management"
+        action="student_management_action"
+        sequence="0"
+    />
+     <menuitem
+      id="menu_teacher_management"
+      name="Teachers"
+      parent="menu_root_school_management"
+      action="teacher_management_action"
+      sequence="1"
+   />
+
+</odoo>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Wizard Form View -->
+    <record id="send_student_email_form" model="ir.ui.view">
+        <field name="name">send.student.email.form</field>
+        <field name="model">send.student.email</field>
+        <field name="arch" type="xml">
+            <form string="Send Student Email">
+                <group>
+                    <group>
+                        <field name="email_form"/>
+                        <field name="email_to"/>
+                        <field name="email_subject"/>
+                        <field name="email_body"/>
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!-- Wizard Window Action -->
+    <record id="send_student_action"
+            model="ir.actions.act_window">
+        <field name="name">Send Email</field>
+        <field name="res_model">send.student.email</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

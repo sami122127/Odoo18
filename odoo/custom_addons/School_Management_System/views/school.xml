@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="view_school_management_system_form" model="ir.ui.view">
+        <field name="name">school.management.system.form</field>
+        <field name="model">school.management.system</field>
+        <field name="arch" type="xml">
+            <form string="School">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="address"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
